@@ -1,0 +1,37 @@
+.launch{
+    height: 200px;
+    width: 1000px;
+    /* background: red; */
+    display: flex;
+    padding: 8px;
+    box-shadow: 1px 1px 9px 1px darkgray;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.launch img{
+    height: 200px;
+    width: 200px;
+}
+.content{
+    margin-left: 20px;
+    width: 80%;
+    color: cadetblue;
+    font-size: 12px;
+}
+.content .info{
+    display: flex;
+}
+.info h2{
+    margin-left: 300px;
+}
+.content p{
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-top: 20px;
+    color: grey;
+}
