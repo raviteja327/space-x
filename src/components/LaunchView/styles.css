@@ -1,0 +1,21 @@
+.attribute{
+    display: flex;
+    margin-bottom: 10px;
+    /* margin: auto !important; */
+}
+.attribute h1{
+    width: 250px;
+    font-size: 20px;
+    color: cadetblue
+}
+.launch-view{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+.launch-details{
+    color: gray
+}
+.launch-view img{
+    height: 400px;
+}
