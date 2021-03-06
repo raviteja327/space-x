@@ -15,6 +15,10 @@ function App() {
     <div className="App">
       <Router>
         <Header />
+        <br />
+        <br />
+        <br />
+        <br />
         <Switch>
           <Route exact path="/">
             <LaunchList />
