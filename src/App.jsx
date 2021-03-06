@@ -8,6 +8,7 @@ import {
   Route,
   // Link
 } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,14 +16,14 @@ function App() {
       <Router>
         <Header />
         <Switch>
-        <Route exact path="/">
+          <Route exact path="/">
             <LaunchList />
           </Route>
           <Route path="/launchview/:flight_number">
             <LaunchView />
           </Route>
-          
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

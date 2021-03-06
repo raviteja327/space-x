@@ -9,7 +9,6 @@ const zoomOutProperties = {
     indicators: true,
     scale: 0.4,
     duration: 1000,
-    // arrows: false
 }
 
 
@@ -24,11 +23,9 @@ class LaunchView extends React.Component {
     }
 
     componentDidMount = () => {
-        // console.log(this.props.match.params.flight_number)
         axios.get('https://api.spacexdata.com/v3/launches/'+this.props.match.params.flight_number)
         .then((response) => 
         this.setState({launch: response.data})
-        // console.log(response.data)
         )
         .catch((error) => console.log(error));
     }
@@ -37,13 +34,12 @@ class LaunchView extends React.Component {
         const value = this.state.launch[key]
         return(
             <div className="attribute">
-                <h1>{title}</h1> : <p>{value}</p>
+                <h1>{title}</h1> : &nbsp; &nbsp; &nbsp; <p>{value}</p>
             </div>
         )
     }
 
     render(){
-        // console.log(this.state.launch.links.flickr_images)
         const images = this.state.launch.links.flickr_images.length > 0;
         return(
             <div className="launch-view">
@@ -66,7 +62,6 @@ class LaunchView extends React.Component {
                     )
 
                 }
-                {/* {this.launchAttr('Details', 'details')} */}
                 <p className="launch-details">{this.state.launch.details}</p>
             </div>
         )

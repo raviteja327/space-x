@@ -1,40 +1,42 @@
 .launch{
-    height: 180px;
-    width: 750px;
-    /* background: red; */
+    height: 200px;
+    width: 80%;
     display: flex;
     padding: 8px;
     box-shadow: 1px 1px 9px 1px darkgray;
     border-radius: 10px;
-    /* margin-top: 50px !important; */
-    /* margin-left: 50px; */
     cursor: pointer;
     margin: auto;
 }
 .launch img{
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     border-radius: 5px;
     box-shadow: 1px 1px 9px 1px darkgray;
 }
 .content{
     margin-left: 20px;
-    width: 80%;
+    width: 100%;
     color: cadetblue;
     font-size: 12px;
+}
+.content .id{
+    margin: 0 !important;
+    color: black;
 }
 .content .info{
     display: flex;
 }
 .info h2{
     margin-left: 150px;
+    color: black;
 }
-.content p{
+.content .details{
     font-size: 20px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 20px !important;
     color: grey;
 }
